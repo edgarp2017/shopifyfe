@@ -62,7 +62,8 @@ const App = ()  => {
 
   const addNominated = (title) => {
     setNominated([...nominated, title])
-    localStorage.setItem("shopify-results", JSON.stringify([...nominated, title]))
+    
+    localStorage.setItem("shopify-results", JSON.stringify(nominated))
   }
 
   const removeNominated = (title) => {
@@ -74,7 +75,8 @@ const App = ()  => {
       }
     }
     setNominated(update)
-    localStorage.setItem("shopify-results", JSON.stringify(update))
+    console.log(nominated)
+    localStorage.setItem("shopify-results", JSON.stringify(nominated))
   }
 
   return (
@@ -121,7 +123,6 @@ const App = ()  => {
                 nominated.map((movie) => {
                   return (
                     <NominatedList 
-                      key={nominated.length}
                       Title={movie} 
                       removeNominated={removeNominated}
                     /> 
