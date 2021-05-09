@@ -76,9 +76,7 @@ const App = ()  => {
   }
 
   return (
-    <Container>
-      { nominated.length === 5 ? <Banner />: <div /> }
-      
+    <Container>      
       <h1 className="mt-5 pt-5 mb-5">The Shoppies</h1>
 
       <SearchBox handleChange={handleChange} />
