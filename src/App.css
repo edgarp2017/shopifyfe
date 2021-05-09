@@ -1,0 +1,12 @@
+.searchbox {
+  width:100%;
+}
+
+.results {
+  color: white;
+  font-weight: bolder;
+}
+
+.title {
+  font-weight: bolder;
+}
