@@ -3,7 +3,7 @@ import React from 'react'
 export default function Banner() {
     return (
         <div>
-            Banner
+            You have nominated all you can remove some.
         </div>
     )
 }
